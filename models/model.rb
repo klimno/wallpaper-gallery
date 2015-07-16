@@ -5,9 +5,14 @@ $images = {"http://i.imgur.com/4zBWpvc.jpg" => ["space", "1280x720"], "http://i.
 def sortimages(category, resolution)
   $results = {}
   $images.each do |key, value|
-    if value & category != nil and value & resolution != nil
+    sharedcategory = value & category
+    #puts sharedcategory
+    sharedresolution = value & resolution
+    #puts sharedresolution.is_a?(Array)
+    puts sharedcategory.at(0)
+    puts sharedresolution.at(0)
+    if sharedcategory.at(0) != nil and sharedresolution.at(0) != nil
       $results[key] = value
     end
   end
 end
-      
