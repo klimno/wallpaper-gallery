@@ -1,0 +1,20 @@
+Make a hash, with the key being the name of the picture and the value being an array with all of its tags (so we can search through that array later to sort through the pictures based on the tags the user selects).
+
+MVP
+1. List of pictures
+2. List of thumbnail pictures that link you to full resolution
+3. Add tags
+4. Sort by tags
+
+Categories:
+Space
+	-Resolution
+Landscape
+	-Resolution
+Animals
+	-Resolution
+Cars
+	-Resolution
+
+Drop-down menu for resolution
+Checklist menu for tags
