@@ -9,12 +9,18 @@ class MyApp < Sinatra::Base
     erb :index
   end
   
+  get '/about' do
+    erb :about
+  end
+  
   post '/imagesort' do
-    category = params[:category]
-    resolution = params[:resolution]
-    sortimages(category, resolution)
+    $categories = params[:category]
+    $resolution = params[:resolution]
+    $categories.compact
+    $resolution.compact
+    sortimages($categories, $resolution)
     imagenum = 1
-    $results.each do |image|
+    $results.each do |image, key|
       return "<img src= #{image}>"
     end
     erb :imagesort
