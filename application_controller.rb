@@ -12,7 +12,7 @@ class MyApp < Sinatra::Base
   get '/about' do
     erb :about
   end
-  
+
   post '/imagesort' do
     @categories = params[:category]
     @resolution = params[:resolution]
