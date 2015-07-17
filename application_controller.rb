@@ -22,7 +22,7 @@ class MyApp < Sinatra::Base
     imagenum = 1
     finalimages = []
     $results.each do |image, info|
-      finalimages.push("<img src= #{image}> Category: #{info.at(0).capitalize}. Resolution: #{info.at(1)}")
+      finalimages.push("<a href=#{image} target=_blank> <img src= #{image} width= 160 height= 90></a> <p>Category: #{info.at(0).capitalize}. Resolution: #{info.at(1)}</p>")
     end
     return finalimages
     erb :imagesort

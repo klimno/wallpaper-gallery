@@ -9,8 +9,8 @@ def sortimages(category, resolution)
     #puts sharedcategory
     sharedresolution = value & resolution
     #puts sharedresolution.is_a?(Array)
-    puts sharedcategory.at(0)
-    puts sharedresolution.at(0)
+    #puts sharedcategory.at(0)
+    #puts sharedresolution.at(0)
     if sharedcategory.at(0) != nil and sharedresolution.at(0) != nil
       $results[key] = value
     end

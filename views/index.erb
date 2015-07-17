@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
- <head>
+  <head>
   <meta charset="UTF-8">
   <title>Desktop Wallpapers</title>
+  <link rel="stylesheet" href="css/style.css" type ="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Oxygen+Mono|Flamenco|Amatic+SC:700,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
  </head>
  <body>
+   <div class="transparent"> </div>
+   <div class ="content">
+     <div id = "title">
+       <h1>Desktop Wallpaper Chooser</h1>
+     </div>
    <div id ="category">
+     <h2>Category</h2>
      <form method="POST" action="/imagesort">
        <input type="checkbox" name="category[]" value="space"> Space <br>
        <input type="checkbox" name="category[]" value="landscape"> Landscape <br>
        <input type="checkbox" name="category[]" value="animals"> Animals <br>
        <input type="checkbox" name="category[]" value="cars"> Cars <br><br>
-
+   </div>
+   <div id ="res">
+     <h2>Resolution</h2>
        <input type="checkbox" name="resolution[]" value="1280x720"> 1280x720 <br>
        <input type="checkbox" name="resolution[]" value="1366x768"> 1366x768 <br>
        <input type="checkbox" name="resolution[]" value="1600x900"> 1600x900 <br>
        <input type="checkbox" name="resolution[]" value="1920x1080"> 1920x1080 <br>
-       <input type="submit" value="Submit">
+     </div>
+     <div id="submit">
+       <input class="button" type="submit" value="Submit">
+     </div>
      </form>
    </div>
    <a href="/about">About</a>
