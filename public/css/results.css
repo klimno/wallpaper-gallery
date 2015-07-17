@@ -24,8 +24,9 @@ h1{
   bottom:25px;
   top:5px;
   padding:10px;
+  padding-right: 5px;
   padding-bottom:40px;
-  width:100%;
+  width:95%;
 }
 
 p {
