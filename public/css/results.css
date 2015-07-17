@@ -1,0 +1,35 @@
+body{
+  background-image:url("http://7-themes.com/data_images/out/21/6839185-gradient.jpg");
+  background-repeat:no-repeat;
+}
+
+
+#title{
+border-bottom: solid;
+  border-top:solid;
+  border-width: medium;
+  width:100%;
+  
+}
+
+h1{
+  font-family:PT Sans;
+  font-size:80px;
+    
+  -webkit-text-stroke: 1px black;
+  color: white;
+  
+  text-align:center;
+  position:relative;
+  bottom:25px;
+  top:5px;
+  padding:10px;
+  padding-bottom:40px;
+  width:100%;
+}
+
+p {
+  text-align:center;
+  
+}
+
